@@ -2,10 +2,11 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { environmment as defaultEnvironment } from './environments.defaults';
 export const environment = {
-  production: false
+    ...defaultEnvironment,
+    baseApiURL: 'https://my-json-server.typicode.com'
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

@@ -1,0 +1,21 @@
+<ng-container *ngIf="showCompany">
+    <h2>Companies Details</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row mouseHover mt-3 pt-0 pb-0" (click)="getContacts(comp)" *ngFor="let comp of companyDetails">
+          <div class="col-md-4">
+            <img class="img-thumbnail img-fluid" src="{{comp.logo}}" alt="{{comp.name}} logo">
+          </div>
+          <div class="col-md-8">
+            <span class="reportName">{{comp.name}}
+            </span>
+            <span class="generatedbadge">{{comp.description}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <app-contacts *ngIf="contacts.length" [contacts]="contacts"></app-contacts>
+      </div>
+    </div>
+</ng-container>
+

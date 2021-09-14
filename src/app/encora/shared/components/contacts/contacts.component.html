@@ -1,0 +1,22 @@
+<h2>Contacts Details</h2>
+<div class="row mouseHover mt-3 pt-0 pb-0" *ngFor="let con of contacts">
+  <div class="col-md-6 left-green-ribbon">
+    <h4 class="reportName">Name: {{con?.name}}</h4>
+    <h4 class="reportName">Phone: {{con?.phone}}</h4>
+    <h4 class="reportName">Country: {{con?.country}}</h4>
+  </div>
+  <div class="col-md-6">
+    <div class="btn-group">
+        <button type="button" (click)="update(con)" class="btn btn-success">Update</button>
+        <button type="button" (click)="delete(con)" class="btn btn-danger">Delete</button>
+      </div>
+  </div>
+  <div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 alignRight">
+    <button type="button" (click)="addContact()" class="btn btn-success">Add Contact</button>
+  </div>
+</div>

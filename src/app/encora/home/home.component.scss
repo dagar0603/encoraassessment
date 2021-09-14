@@ -1,0 +1,30 @@
+.generateButton {
+    line-height: 34px;
+  }
+  .reportName {
+    font: normal normal bold 16px/18px Arial, sans-serif;
+    padding: 10px 10px 10px 0px;
+    display: inline-block;
+  }
+  
+  .generatedDetails {
+    font: normal normal normal 12px/14px Arial, sans-serif;
+    padding: 0 10px 10px 10px;
+    display: inline-block;
+  }
+  
+  .generatedbadge{
+    font: normal normal normal 12px/14px Arial, sans-serif;
+    padding: 0 10px 10px 0px;
+    display: inline-block;
+  }
+  .alignRight{
+    text-align: right;
+  }
+
+  .left-green-ribbon {
+    border-left: 8px solid #00806F;
+  }
+  .mouseHover:hover{
+    cursor: pointer;
+  }

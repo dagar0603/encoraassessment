@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="section">
+  <div class="card">
+    <div class="card-header"><strong>Login to your account</strong></div>
+    <div class="card-body">
+      <form [formGroup]="loginForm" (keydown.enter)="$event.preventDefault()" #formDir="ngForm">
+        <div class="form-group mt-2">
+          <label class="text-muted" for="exampleInputEmail1">
+            Email address</label>
+          <input type="email" formControlName="email" required class="form-control" id="exampleInputEmail1"
+            placeholder="Enter email">
+        </div>
+        <div class="form-group mt-2"><label class="text-muted" for="exampleInputPassword1">Password</label>
+          <input formControlName="pwd" required type="password" class="form-control" id="exampleInputPassword1"
+            placeholder="Password"></div>
+        <div class="form-group mt-2">
+          <button class="btn btn-primary" (click)="getUser()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
